@@ -114,9 +114,13 @@ body {
 	font-size:14px;
 }
 div {
-	height:20px;
-	border-style:solid;
-	border-width:1px;
+}
+#topbar {
+	top:0px;
+	height:30px;
+	width:100%;
+	background:#EEEEEE;
+	margin: 0px 0px -30px 0px;
 }
 
 #container {
@@ -126,49 +130,130 @@ div {
 
 /* ======= header ======= */
 #header {
-	background-color:#EEEEEE;
+	height:120px;
 }
-#header #my-navbar {
-
+#header #navbar {
+	line-height:30px;
+	height:30px;
 }
-#header #my-navbar ul {
+#header #navbar ul {
 	list-style-type:none;
 }
-#header #my-navbar ul li {
+#header #navbar ul li {
 	display:inline;
 }
-#header #my-navbar ul li .width30 {
-	width:30px;
+#header #navbar #navbar-left{
+	width:auto;
+	float:left;
 }
-#header #my-navbar ul li .width60 {
-	width:60px;
+#header #navbar #navbar-right {
+	width:auto;
+	float:right;
+}
+#header #logo {
+	width:300px;
+	height:60px;
+	background:url("../img/logo.png") no-repeat;
+	margin-top:10px;
+	float:left;
+}
+#header #menu {
+	float:left;
+	height:30px;
+	width:620px;
+	margin-top:10px;
+	padding-top:40px;
+}
+#header #menu #menulist-left {
+}
+#header #menu #menulist-left a{
+	margin:0px 5px 0px 5px;
+	padding: 5px 10px 5px 10px;
+	background-color:black;
+	color:white;
+}
+#header #menu #menulist-right {
+	float:right;
+}
+#header #menu #menulist-right a{
+	margin:0px 5px 0px 5px;
+	padding: 5px 10px 5px 10px;
+	background-color:black;
+	color:white;
 }
 
 /* ======= content ========*/
 
 #content {
 	background-color:#FFEFC6;
-	
+	border-style:solid;
+	border-width:1px;
+}
+#content #mainbar {
+	width:700px;
+	float:left;
+}
+#content #mainbar #subheader {
+	margin-top:10px;
+	width:100%;
+	height:30px;
+	border-bottom:1px;
+	border-style:solid;
+}
+#content #mainbar #subheader #subheader-title {
+	float:left;
+	font-weight:bold;
+	font-size:18px;
+	line-height:30px;
+}
+#content #mainbar #subheader #subheader-list {
+	float:right;
+	line-height:30px;
+}
+#content #mainbar #subheader #subheader-list a {
+	height:29px;
+	float:left; 
+	margin:0px 10px 0px 10px;
+}
+#content #mainbar #subheader #subheader-list a.current-category {
+	border-style:solid;
+	border-width:1px;
+	border-bottom-color:white;
+	font-size:120%;
+	padding:0px 11px 0px 11px;
+}
+#content #mainbar #ticketlist .ticket {
+	height:80px;
+	border-style:solid;
+	border-width:1px;
+	background-color:#FFEFC6;
+	margin-top:10px;
+}
+#content #sidebar {
+	width:240px;
+	float:right;
+}
+#content #sidebar .widget {
+	width:100%;
+	height:150px;
+	background-color:#C7EDCC;
+	margin-top:10px;
 }
 
 /* ======= footer =========*/
 #footer {
 	background-color:#EEEEEE;
+	clear:left;
 }
-#footer #my-footbar {
+#footer #footbar {
 
 }
-#footer #my-footbar ul {
+#footer #footbar ul {
 	list-style-type:none;
 }
-#footer #my-footbar ul li {
+#footer #footbar ul li {
 	display:inline;
 }
-
-
-
-
-
 
 /* ==========================================================================
    Media Queries
