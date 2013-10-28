@@ -185,9 +185,6 @@ div {
 /* ======= content ========*/
 
 #content {
-	background-color:#FFEFC6;
-	border-style:solid;
-	border-width:1px;
 }
 #content #mainbar {
 	width:700px;
@@ -238,6 +235,9 @@ div {
 	height:150px;
 	background-color:#C7EDCC;
 	margin-top:10px;
+}
+#content #div.clearfix {
+	clear:both;
 }
 
 /* ======= footer =========*/
