@@ -158,13 +158,12 @@ div {
 	float:left;
 }
 #header #menu {
-	float:left;
 	height:30px;
-	width:620px;
 	margin-top:10px;
 	padding-top:40px;
 }
 #header #menu #menulist-left {
+	float:left;
 }
 #header #menu #menulist-left a{
 	margin:0px 5px 0px 5px;
@@ -221,10 +220,12 @@ div {
 }
 #content #mainbar #ticketlist .ticket {
 	height:80px;
-	border-style:solid;
-	border-width:1px;
 	background-color:#FFEFC6;
 	margin-top:10px;
+}
+#content #mainbar #bottom-notice {
+	margin: 10px 0px 10px 0px;
+	background-color:#FFEFC6;
 }
 #content #sidebar {
 	width:240px;
@@ -238,19 +239,17 @@ div {
 }
 
 /* ======= footer =========*/
+
+#footbar {
+	width:100%;
+	background-color:#777777;
+	border-top:7px solid #000;
+}
 #footer {
-	background-color:#EEEEEE;
-}
-#footer #footbar {
+	width:980px;
+	margin:0 auto;
 
 }
-#footer #footbar ul {
-	list-style-type:none;
-}
-#footer #footbar ul li {
-	display:inline;
-}
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
