@@ -236,14 +236,10 @@ div {
 	background-color:#C7EDCC;
 	margin-top:10px;
 }
-#content #div.clearfix {
-	clear:both;
-}
 
 /* ======= footer =========*/
 #footer {
 	background-color:#EEEEEE;
-	clear:left;
 }
 #footer #footbar {
 
