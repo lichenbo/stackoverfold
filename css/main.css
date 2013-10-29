@@ -115,12 +115,19 @@ body {
 }
 div {
 }
+h3 {
+	font-weight:bold;
+	line-height:1.3em;
+}
 #topbar {
 	top:0px;
 	height:30px;
 	width:100%;
 	background:#EEEEEE;
 	margin: 0px 0px -30px 0px;
+}
+a {
+	text-decoration:none;
 }
 
 #container {
@@ -168,22 +175,30 @@ div {
 #header #menu #menulist-left a{
 	margin:0px 5px 0px 5px;
 	padding: 5px 10px 5px 10px;
-	background-color:black;
+	background-color:#777777;
 	color:white;
 }
+#header #menu #menulist-left a:hover{
+	background-color:#ff9900;
+}
+
 #header #menu #menulist-right {
 	float:right;
 }
 #header #menu #menulist-right a{
 	margin:0px 5px 0px 5px;
 	padding: 5px 10px 5px 10px;
-	background-color:black;
+	background-color:#777777;
 	color:white;
+}
+#header #menu #menulist-right a:hover{
+	background-color:#ff9900;
 }
 
 /* ======= content ========*/
 
 #content {
+	margin:0px 0px 20px 0px;
 }
 #content #mainbar {
 	width:700px;
@@ -193,8 +208,7 @@ div {
 	margin-top:10px;
 	width:100%;
 	height:30px;
-	border-bottom:1px;
-	border-style:solid;
+	border-bottom:1px solid #cccccc;
 }
 #content #mainbar #subheader #subheader-title {
 	float:left;
@@ -210,22 +224,93 @@ div {
 	height:29px;
 	float:left; 
 	margin:0px 10px 0px 10px;
+	color:#777;
+	line-height:30px;
+	border-style:solid;
+	border-color:transparent transparent #cccccc transparent;
+	border-width:1px;
+	padding: 0px 10px;
+}
+#content #mainbar #subheader #subheader-list a:hover {
+	border-color:#cccccc #cccccc white #cccccc; 
 }
 #content #mainbar #subheader #subheader-list a.current-category {
-	border-style:solid;
-	border-width:1px;
-	border-bottom-color:white;
 	font-size:120%;
 	padding:0px 11px 0px 11px;
+	color:black;
+	line-height:30px;
+	border-color:#cccccc #cccccc white #cccccc;
+}
+#content #mainbar #ticketlist {
+	margin:10px 0px 0px 0px;
 }
 #content #mainbar #ticketlist .ticket {
-	height:80px;
 	background-color:#FFEFC6;
-	margin-top:10px;
+	border-bottom:solid 1px #EAEAEA;
+	padding: 10px 10px;
+}
+#content #mainbar #ticketlist .ticket .ticketinfo {
+	float:left;
+	text-align:center;
+}
+#content #mainbar #ticketlist .ticket .minicounts {
+	height:25px;
+	font-size:160%;
+}
+#content #mainbar #ticketlist .ticket .ticketinfo .ticketvotes {
+	height:38px;
+	width:38px;
+	float:left;
+	margin:0px 5px 0px 0px;
+	padding:5px;
+	color:#555555;
+}
+#content #mainbar #ticketlist .ticket .ticketinfo .ticketanswers {
+	height:38px;
+	width:48px;
+	float:left;
+	margin:0px 5px 0px 0px;
+	padding:5px;
+}
+#content #mainbar #ticketlist .ticket .ticketinfo .ticketanswers,.answered{
+	background-color:#75845C;
+	color:#FFFFFF;
+}
+#content #mainbar #ticketlist .ticket .ticketinfo .ticketviews {
+	height:38px;
+	width:34px;
+	float:left;
+	margin:0px 5px 0px 0px;
+	padding:5px;
+	color:#999;
+}
+#content #mainbar #ticketlist .ticket .ticketsummary {
+}
+#content #mainbar #ticketlist .ticket .ticketsummary h3{ 
+
+}
+#content #mainbar #ticketlist .ticket .ticketsummary .tickettags{
+	float:left;
+	margin:10px 10px;
+}
+#content #mainbar #ticketlist .ticket .ticketsummary .tickettags .tickettag{
+	float:left;
+	line-height:1.3em;
+	margin:0px 5px;
+	padding:1px 5px;
+	background-color:#E0EAF1;
+	border-bottom:1px solid #b3cee1;
+	border-right:1px solid #b3cee1;
+}
+#content #mainbar #ticketlist .ticket .ticketsummary .timestamp {
+	float: right;
+	margin:10px 0px;
 }
 #content #mainbar #bottom-notice {
-	margin: 10px 0px 10px 0px;
+	margin: 10px 0px 0px 0px;
 	background-color:#FFEFC6;
+	font-size:140%;
+	font-weight:bold;
 }
 #content #sidebar {
 	width:240px;
