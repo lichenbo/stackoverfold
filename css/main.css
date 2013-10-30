@@ -200,6 +200,13 @@ a {
 #content {
 	margin:0px 0px 20px 0px;
 }
+/* ticket.html */
+#content #tickettitle {
+	font-size:180%;
+	border-bottom:1px #cccccc solid;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
 #content #mainbar {
 	width:700px;
 	float:left;
@@ -272,7 +279,7 @@ a {
 	margin:0px 5px 0px 0px;
 	padding:5px;
 }
-#content #mainbar #ticketlist .ticket .ticketinfo .ticketanswers,.answered{
+#content #mainbar #ticketlist .ticket .ticketinfo .ticketanswers.answered{
 	background-color:#75845C;
 	color:#FFFFFF;
 }
@@ -289,11 +296,11 @@ a {
 #content #mainbar #ticketlist .ticket .ticketsummary h3{ 
 
 }
-#content #mainbar #ticketlist .ticket .ticketsummary .tickettags{
+.tickettags{
 	float:left;
 	margin:10px 10px;
 }
-#content #mainbar #ticketlist .ticket .ticketsummary .tickettags .tickettag{
+.tickettag{
 	float:left;
 	line-height:1.3em;
 	margin:0px 5px;
@@ -311,6 +318,38 @@ a {
 	background-color:#FFEFC6;
 	font-size:140%;
 	font-weight:bold;
+}
+
+/* ticket.html */
+.ticketvote {
+	width:50px;
+	float:left;
+	text-align:center;
+	margin:0px 10px;
+}
+#content #mainbar .ticketcontent {
+	float:left;
+	width:620px;
+
+}
+#content #mainbar #ticketdetail .ticketinfo {
+}
+.ticketauthor {
+	float:right;
+	margin:10px;
+	background-color:#cccccc;
+	width:200px;
+	height:50px;
+	overflow:hidden;
+}
+#content #mainbar #ticketanswerbar {
+	font-size:140%;
+	margin:10px;
+	border-bottom: 1px solid #cccccc;
+}
+#content #mainbar #ticketanswers .ticketanswer{
+	padding:10px 0px;
+	border-bottom:1px solid #cccccc;
 }
 #content #sidebar {
 	width:240px;
