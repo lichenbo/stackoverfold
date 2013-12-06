@@ -1,0 +1,35 @@
+//
+   Created by lichenbo on 12/5/13.
+
+extends layout
+
+block content
+    section
+        article
+            h2= topic.title
+            p!= topic.content
+            h4= topic.create_at.toDateString()
+            h5 Tags:
+            each tag,i in topic.tags
+                div #{i+1}:#{tag}
+    hr
+    section
+        each reply,i in replylist
+            article
+                h4 Reply##{i+1}
+                p!= reply.content
+                div Author #{reply.author_id}
+                date Created at: #{reply.create_at.toDateString()}
+                div Vote: #{reply.vote}
+                div Vote
+                    a(href="reply/#{reply._id}/pro") Pro
+                    a(href="reply/#{reply._id}/con") Con
+            hr
+
+    form(action='reply/create',method='post')
+        div Reply:
+            div Content:
+            textarea(name="content")
+        input(type="submit",value="reply")
+    script.
+        CKEDITOR.replace('content')

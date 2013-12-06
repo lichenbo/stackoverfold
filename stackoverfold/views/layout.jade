@@ -1,0 +1,20 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/ckeditor/ckeditor.js")
+    script(src="/ckeditor/adapters/jquery.js")
+  body
+      h1
+          a(href="/") Stackoverfold
+      header
+          unless user == null
+              p Hello,
+                  a(href="/user/#{user._id}/view") #{user.username}
+          div
+              if user == null
+                  a(href="/login") login
+              else
+                  a(href="/logout") logout
+      block content

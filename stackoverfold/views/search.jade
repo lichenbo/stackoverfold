@@ -1,0 +1,12 @@
+//
+   Created by lichenbo on 12/6/13.
+
+extends layout
+
+block content
+    each item in list
+        div
+            div
+            a(href="/topic/#{item.obj._id}/view")=item.obj.title
+            a(href="/user/#{item.obj._id}/view")=item.obj.username
+        hr

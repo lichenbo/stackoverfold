@@ -1,0 +1,20 @@
+//
+   Created by lichenbo on 12/5/13.
+
+extends layout
+
+block content
+    div
+        h2= user.username
+        h4 #{user.credit} credits in total
+
+    section My Question
+    ul
+        each topic in topiclist
+            li
+                a(href="/topic/#{topic._id}/view")= topic.title
+    seciton My Answer
+    ul
+        each reply in replylist
+            li
+                a(href="/topic/#{reply.topic_id}/view")= reply.content

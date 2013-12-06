@@ -1,0 +1,23 @@
+//
+   Created by lichenbo on 12/5/13.
+
+extends layout
+
+block content
+    div
+        form(action='/topic/create',method='post')
+            div
+                span Title:
+                input(type="text",name="title")
+            div
+                span Content:
+                textarea(name="content")
+                script.
+                    CKEDITOR.replace('content')
+            div
+                span Tag:
+                input(type="text",name="tag")
+            div
+                span Credit
+                input(type="text",name="credit")
+            input(type="submit",value="ask")

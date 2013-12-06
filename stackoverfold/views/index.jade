@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  unless user == null
+      p Hello, #{user.username}
+  div
+      a(href="topic/create") Ask a question
+  div Search Topic:
+      form(method='post',action='/topic/search')
+          input(type='text',name='text')
+          input(type='submit', value='search')
+  div Search User:
+      form(method='post',action='/user/search')
+          input(type='text',name='text')
+          input(type='submit', value='search')
+  div
+      each topic in topiclist
+          div
+              h2
+                  a(href="/topic/#{topic._id}/view")= topic.title
+              date= topic.create_at
